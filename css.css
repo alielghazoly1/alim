@@ -1,0 +1,434 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*start header*/
+.header{
+    background-color: #eee;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header .container .logo img{
+    width: 30px;
+}
+.header .container  .list img{
+    width: 30px;
+}
+.header .container .main{
+    position: relative;
+}
+.header .container .main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    min-width: 190px;
+    top: calc(100% + 10px);
+    z-index: 1;
+    display: none;
+}
+.header .container .main:hover ul{
+    display: block;
+}
+.header .container .main ul li a{
+    text-decoration: none;
+    color: #001220;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.header .container .main ul li{
+    padding: 10px;
+}
+.header .container .main ul li:not(:last-child){
+    border-bottom: 1px solid white;
+}
+.header .container .main ul li a:hover{
+    margin-left: 10px;
+    font-size: 30px;
+}
+/*end header*/
+/*start portfolio*/
+.portfolio{
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+    background-color:#001220;
+}
+.portfolio .container .write {
+    color: #ddd;
+    padding-top: 120px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.portfolio .container .googel{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    color: white;
+    margin-top: 170px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.portfolio .container .googel .one{
+    color: rgb(66, 133, 244,1);
+}
+.portfolio .container .googel .two{
+    animation-delay: 0.2s;
+    color: rgb(234, 67, 53,1);
+}
+.portfolio .container .googel .three{
+    animation-delay: 0.3s;
+    color: rgb(251, 188, 5,1);
+}
+.portfolio .container .googel .four {
+    animation-delay: 0.4s;
+    color:rgb(66, 133, 244,1) ;
+}
+.portfolio .container .googel .five {
+    animation-delay: 0.5s;
+    color:rgb(52, 168, 83,1) ;
+}
+.portfolio .container .googel .six{
+    animation-delay: 0.6s;
+    color: rgb(234, 67, 53,1);
+}
+@keyframes up-and-down {
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-40px);
+    }
+}
+/*end portfolio*/
+/*start portfolio1*/
+.portfolio1{
+    background-color: #ddd;
+}
+.portfolio1 .container .toppor{
+    display: flex;
+    justify-content: center;
+}
+.portfolio1 .container .toppor .img img{
+    width: 100px;
+    border-radius: 100px;
+    border: 3px solid;
+    border-bottom: transparent;
+}
+.portfolio1 .container .toppor .img {
+    padding: 20px 20px;
+}
+.portfolio1 .container .write{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 55px 20px;
+}
+/*end portfolio1*/
+/*start photo*/
+.photo{
+    background-color: #ddd;
+}
+.photo .container{
+    background-color: #001220;
+}
+.photo .some{
+    color: #eee;
+    text-align: center;
+    padding: 5px;
+}
+/*end photo*/
+/*start photo1*/
+.photo1{
+    background-color: #ddd;
+}
+.photo1 .container {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+.photo1 .container img{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    width: 300px;
+}
+/*end photo1*/
+/*start skills*/
+.skills{
+    background-color: #ddd;
+}
+.skills .container{
+    background-color: #001220;
+    color: #eee;
+    padding: 5px;
+    text-align: center;
+}
+.skills1{
+    background-color: #ddd;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.skills1 .container .write{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills1 .container .skill .Designer{
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.skills1 .container .skill{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+.skills1 .container .skill .Designer1{
+    padding: 10px 25%;
+    margin-top: 30px;
+    background-color: #001220;
+    border-radius: 30px;
+    position: relative;
+}
+.skills1 .container .skill .Designer2{
+    background-color: #eee;
+    padding: 10px 10%;
+    left: 10px;
+    top: 8px;
+    position: absolute;
+    border-radius:10px 0px 0px 10px;
+}
+skills1 .container .write{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills1 .container .skill2 .Designer{
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-right: 3px;
+}
+.skills1 .container .skill2{
+    display: flex;
+    justify-content: center;
+}
+.skills1 .container .skill2 .Designer1{
+    padding: 10px 25%;
+    margin-top: 30px;
+    background-color: #001220;
+    border-radius: 30px;
+    position: relative;
+}
+.skills1 .container .skill2 .Designer2{
+    background-color: #eee;
+    padding: 10px 40%;
+    left: 10px;
+    top: 8px;
+    position: absolute;
+    border-radius:10px 0px 0px 10px;
+}
+.skills1 .container .write{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills1 .container .skill3 .Designer{
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.skills1 .container .skill3{
+    display: flex;
+    justify-content: center;
+}
+.skills1 .container .skill3 .Designer1{
+    padding: 10px 25%;
+    margin-top: 30px;
+    background-color: #001220;
+    border-radius: 30px;
+    position: relative;
+}
+.skills1 .container .skill3 .Designer2{
+    background-color: #eee;
+    padding: 10px 22%;
+    left: 10px;
+    top: 8px;
+    position: absolute;
+    border-radius:10px 0px 0px 10px;
+}
+.skills1 .container .write{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills1 .container .skill4 .Designer{
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.skills1 .container .skill4{
+    display: flex;
+    justify-content: center;
+}
+.skills1 .container .skill4 .Designer1{
+    padding: 10px 25%;
+    margin-top: 30px;
+    background-color: #001220;
+    border-radius: 30px;
+    position: relative;
+}
+.skills1 .container .skill4 .Designer2{
+    background-color: #eee;
+    padding: 10px 15%;
+    left: 10px;
+    top: 8px;
+    position: absolute;
+    border-radius:10px 0px 0px 10px;
+}
+/*end skills*/
+/*start about*/
+.about{
+    padding-top: 70px;
+    background-color: #ddd;
+}
+.about .container{
+    background-color: #001220;
+    color: #eee;
+    padding: 5px;
+    text-align: center;
+}
+/*end about*/
+/*start up*/
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: -30px;
+    background-color: #A7233A;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.show {
+    right: 10px;
+}
+/*end up*/
+/*start about1*/
+.about1{
+    background-color: #ddd;
+    padding-top: 100px;
+}
+.about1 .container{
+    text-align: center;
+}
+.about1 .container .loction{
+    margin-bottom: 20px;
+}
+.about1 .container .phone img{
+    width: 40px;
+    border-radius:100%;
+    
+}
+.about1 .container span {
+    font-weight: bold;
+    font-size: 24px;
+}
+.about1 .container .phone{
+    margin-bottom: 20px;
+}
+.about1 .container .social img{
+    border-radius: 100%;
+    width: 50px;
+}
+.about1 .container .social{
+    padding-bottom:70px;
+}
+.send {
+    padding-bottom:50px;
+}
+.send .container input {
+    padding: 10px;
+    background-color: #001220;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.send .container input::placeholder{
+    color: #ddd;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.send .container button{
+    border: none;
+    padding: 8px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 2px solid;
+    margin-left: 20px;
+}
+.send .container input:focus{
+    border: none;
+    outline: none;
+}
+.end{
+    background-color: #001220;
+    padding: 7px;
+    text-align: center;
+    color: white;
+}
+.end span{
+    color: rgb(0, 255, 128);
+    margin-right: 4px;
+    margin-left: 4px;
+    text-decoration: underline;
+}
+/*end about1*/
